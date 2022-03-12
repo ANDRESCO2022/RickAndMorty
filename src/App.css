@@ -1,15 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(14, 13, 13);
+  font-weight: normal;
+  font-size: 18px;
+  font-family: ialic, sans;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container {
+  background: rgb(43, 34, 29);
+  border-radius: 1px;
+  box-shadow: 2px 2px 8px rgb(139, 138, 138);
+  padding: 1rem;
+  color: #fff;
+  height:auto;
+  
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
+h2 {
+  align-items: center;
+}
+
+h3 {
+  left: 0;
+}
+
+.random-info {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+
+}
+
+input {
+  background: #443737;
+  border: 0;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+
+}
+
+button {
+  padding: 8px;
+  margin-top: 1.5rem;
+  width: 60px;
+  height: 42px;
+  border: 0;
+  outline: 0;
+  background: #443737;
+  box-shadow: 4px grey;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  color: rgb(216, 207, 200);
+}
+
+
+.card-row{
+  margin: 0;
+  display: flex;
+}
+.card-Morty {
+  display: flex;
+  height: 200px;
+  background: #443737;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(238, 233, 233);
+  padding: 10px;
+  
+  color: aliceblue;
+  
+  align-items: left;
+  font-size: 18px;
+
+
+}
+.banner{
+  height: 100%;
+  width: 100%;
+  display: content;
+  background-image: url('https://uvn-brightspot.s3.amazonaws.com/assets/vixes/rick-morty-gif-0417-1400x800-2.jpg');
+  background-color: rgb(192, 248, 225);
+      height: 400px;
+      background-position: 45% 33%;
+  }
+  .banner img{
+    margin-top: 25rem;
+    
+  }
+
+.card-Morty img {
+  border-radius: 5px;
+}
+
+.card-MortyInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 2px;
+  
+}
+.resident-list{
+  padding: 0.5rem;
+    
+}
+
+.card-MortyInfo li {
+
+  list-style: none;
+ 
+
+}
+
+
+@media (min-width: 570px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .resident-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  
+
+  }
+
+  .card-row {
+    flex-wrap: wrap;
+    display: flex;
   }
 }
 
@@ -28,11 +165,16 @@
   color: #61dafb;
 }
 
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
