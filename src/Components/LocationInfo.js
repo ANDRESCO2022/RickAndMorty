@@ -11,6 +11,7 @@ const LocationInfo = () => {
       .get(`https://rickandmortyapi.com/api/location/${random}/`)
       .then((res) => {
         setCharacter(res.data);
+         console.log(res.data);
            });
   }, []);
   return (
